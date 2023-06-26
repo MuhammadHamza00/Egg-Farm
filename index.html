@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farms</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="index.js"></script>
+
+
+<body>
+
+    <!--Logo area -->
+    <div class="parentlogo">
+        <div class="logo"></div>
+        <div id="bar">
+            <input type="button" value="" id="search">
+            <input type="button" value="" id="store">
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navabar">
+        <select name="Home" id="home" class="selection">
+            <option value="Home" class="opt">Home</option>
+            <option value="LOREM" class="opt">Lorem</option>
+            <option value="IPSUM" class="opt">Ipsum</option>
+        </select>
+
+
+        <select name="About" id="about" class="selection">
+            <option value="About" class="opt">About</option>
+            <option value="LOREM" class="opt">Lorem</option>
+            <option value="IPSUM" class="opt">Ipsum</option>
+        </select>
+
+
+        <select name="Contact" id="Contact" class="selection">
+            <option value="Contact" class="opt">Contact</option>
+            <option value="LOREM" class="opt">LOREM</option>
+            <option value="IPSUM" class="opt">Ipsum</option>
+        </select>
+
+
+        <select name="Store" id="Store" class="selection">
+            <option value="Store" class="opt">Store</option>
+            <option value="LOREM" class="opt">Lorem</option>
+            <option value="IPSUM" class="opt">Ipsum</option>
+        </select>
+    </nav>
+    <!-- bg -->
+    <div class="bg">
+        <input type="button" value="" id="left-arrow">
+        <div class="content">
+            <h1>WE CAN FULFILL <br>ALL YOUR<br> NEEDS </h1>
+            <button id="read">READ MORE ABOUT US</button>
+        </div>
+        <input type="button" value="" id="right-arrow">
+
+    </div>
+    <h1 id="heading">OUR PRODUCTS</h1>
+    <div class="products">
+        <h1>PRODUCT NAME</h1>
+        <div class="product">
+
+            <div class="img1"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ab quis reprehenderit aut natus <br> a
+                saepe accusantium asperiores cumque. Laudantium?Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit.<br> Maxime unde necessitatibus asperiores dicta odio, explicabo distinctio temporibus ab rerum.
+                Dolor magnam tenetur voluptate <br>facilis quaerat nesciunt dicta voluptates blanditiis maiores?</p>
+            <button class="readmore">READ MORE</button>
+        </div>
+        <h1>PRODUCT NAME</h1>
+        <div class="product">
+
+            <div class="img2"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ab quis reprehenderit aut<br> natus a
+                saepe accusantium asperiores cumque. Laudantium? Maxime unde necessitatibus asperiores dicta odio,
+                explicabo<br> distinctio temporibus ab rerum. Dolor magnam tenetur voluptate facilis quaerat nesciunt
+                dicta voluptates blanditiis<br> maiores?</p>
+            <button class="readmore">READ MORE</button>
+        </div>
+        <h1>PRODUCT NAME</h1>
+        <div class="product">
+
+            <div class="img3"></div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ab quis reprehenderit aut natus<br> a
+                saepe accusantium asperiores cumque. Laudantium? Maxime unde necessitatibus asperiores dicta odio,
+                explicabo <br>distinctio temporibus ab rerum. Dolor magnam tenetur voluptate facilis quaerat nesciunt
+                dicta voluptates blanditiis<br> maiores?</p>
+            <button class="readmore">READ MORE</button>
+        </div>
+
+    </div>
+    <footer>
+        <div class="help">
+            <h1>NEED HELP!</h1>
+            <h4 id="phone">Phone:00 031 234 5433</h4>
+            <h4 id="email">EMAIL:globalfarms@2021.com</h4>
+        </div>
+        <hr id="hello">
+        <div class="service">
+            <h1>SERVICES</h1>
+            <h4 class="it1">Term and Conditions</h4>
+            <h4 class="it1">Privacy Policy</h4>
+            <h4 class="it1">Track Your Order</h4>
+
+        </div>
+        <hr id="hello">
+        <div class="company">
+            <h1>COMPANY</h1>
+            <h4 class="it1">About Us</h4>
+            <h4 class="it1">Careers</h4>
+            <h4 class="it1">Store</h4>
+
+        </div>
+        <hr id="hello">
+        <div class="contact">
+            <h1>FOLLOW US</h1>
+            <div class="social_area">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook" id="fb"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter" id="twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube" id="youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram" id="insta"></i></a></li>
+                    <li><a href=""><i class="fab fa-spotify" id="spotify"></i></a></li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let leftBtn = document.getElementById('left-arrow');
+        leftBtn.addEventListener("click", click, false);
+
+
+        function click(e) {
+            const note = document.querySelector(".bg");
+            note.style.backgroundImage = "url('bchicks3.jfif')";
+        }
+        let rightBtn = document.getElementById('right-arrow');
+        function click1(e) {
+            const note = document.querySelector(".bg");
+            note.style.backgroundImage = "url('toychick.jfif')";
+        }
+        rightBtn.addEventListener("click", click1, false);
+    </script>
+</body>
+
+</html>
